@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pomodoro Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+
+<body>
+    <h1 class="text-danger text-center font-weight-bold display-1 m-4">Pomodoro Timer</h1>
+
+    <div id="headers" class="bg-primary row h-100 justify-content-center align-items-center">
+        <h2 id="txtTimer" class="d-inline text-center m-4">Timer</h2>
+        <h2 id="txtShortBreak" class="d-inline text-center m-4">Short Break</h2>
+        <h2 id="txtLongBreak" class="d-inline text-center m-4">Long Break</h2>
+    </div>
+    <h1 id="timer" class="text-body text-center font-weight-bold display-1 m-4">25:00</h1>
+    <div class="row h-100 justify-content-center align-items-center">
+        <button type="button" class="btn btn-primary btn-lg m-2" onclick="startTimer()">Start</button>
+        <button type="button" class="btn btn-warning btn-lg m-2" onclick="pauseTimer()">Pause</button>
+        <button type="button" class="btn btn-success btn-lg m-2" onclick="resumeTimer()">Resume</button>
+        <button type="button" class="btn btn-danger btn-lg m-2" onclick="restTimer()">Reset</button>
+    </div>
+    <h2 id="roundIndicator" class="text-body text-center font-weight-bold display-3 m-4">Round: 0</h2>
+
+    <script src="./PomodoroTimer.js"></script>
+</body>
+
+</html>
