@@ -93,7 +93,6 @@ function shortBreak() {
     document.getElementById("txtTimer").style.color = "black"
     document.getElementById("txtShortBreak").style.color = "white"
     document.getElementById("txtLongBreak").style.color = "black"
-    console.log("shortBreak()")
 }
 
 //This is a function for a long break
@@ -107,7 +106,6 @@ function longBreak() {
     document.getElementById("txtTimer").style.color = "black"
     document.getElementById("txtShortBreak").style.color = "black"
     document.getElementById("txtLongBreak").style.color = "white"
-    console.log("longBreak()")
 }
 
 //This is for the Reset button. Set all values to default
